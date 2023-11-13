@@ -71,26 +71,12 @@ Learn hands-on with 'school-library' in a practical Ruby environment for advance
 
 ## Authors <a name="authors"></a>
 
-<!-- This project was collaboratively developed by three individuals. -->
 
 👤 **Richard Sikaonga**
 
 - GitHub: [@richie1988](https://github.com/richie1988)
 - Twitter: [@RichieSikaonga](https://twitter.com/RichieSikaonga)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/richard-sikaonga-039940275)
-
-<!-- 👤 **Nelly Telli** -->
-
-<!-- - GitHub: [@lily4178993](https://github.com/lily4178993)
-- Medium: [@nellytelli](https://medium.com/@nellytelli)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/nellytelli) -->
-
-<!-- 👤 **Raphael Miyoyo** -->
-
-<!-- - GitHub: [@rmiyoyo](https://github.com/rmiyoyo)
-- Twitter: [@r_miyoyo](https://twitter.com/r_miyoyo)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/raphael-miyoyo) -->
-
 
 ## Future Features <a name="future-features"></a>
 
