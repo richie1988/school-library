@@ -2,12 +2,9 @@
 
 <a name="readme-top"></a>
 
-# My-own-Enumerable
-
 ## Table of Contents
 
 - [school-library](#school-library)
-- [My-own-Enumerable](#my-own-enumerable)
   - [Table of Contents](#table-of-contents)
   - [About the Project ](#about-the-project-)
   - [Built With ](#built-with-)
