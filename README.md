@@ -1,5 +1,7 @@
 # school-library
-
+<div align-items="center">
+<img src="./rubyschoollibrary.png" width="auto" height="auto" alt="rubyschooldiagram">
+</div>
 <a name="readme-top"></a>
 
 ## Table of Contents
