@@ -78,10 +78,9 @@ Learn hands-on with 'school-library' in a practical Ruby environment for advance
 - LinkedIn: [LinkedIn](https://linkedin.com/in/richard-sikaonga-039940275)
 
 
-
 ## Future Features <a name="future-features"></a>
 
-No planned future features at this time. The project is complete and functional, but open to community contributions and suggestions for improvements.
+No planned future features at this time. The project is complete and functional, but open to community contributions and suggestions for improvement it will be appreciated thank you.
 
 ## Contributing <a name="contributing"></a>
 

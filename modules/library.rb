@@ -99,7 +99,6 @@ class Library
     save_rentals_to_file
   end
 
-
   private
 
   # Saves people to a file in JSON format.
