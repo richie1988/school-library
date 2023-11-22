@@ -1,26 +1,32 @@
+# app.rb
+require_relative '../decorator/classroom'
 require_relative 'library'
 require_relative 'person'
 require_relative 'student'
 require_relative 'teacher'
-require_relative 'classroom'
 require_relative 'book'
 require_relative 'rental'
 
+# The App class represents the main application for the school library
 class App
+  # Initializes the App with a new Library instance.
   def initialize
     @library = Library.new
   end
 
+  # Displays a list of all books in the library.
   def list_all_books
     puts 'All Books'
     @library.list_all_books
   end
 
+  # Displays a list of all people (students and teachers) in the library.
   def list_all_people
     puts 'All People'
     @library.list_all_people
   end
 
+  # Guides the user to create either a student or a teacher based on their choice.
   def create_person
     puts 'Do you want to create the student(1) or teacher(2)? [input the number]:'
     choice = gets.chomp.to_i
@@ -35,6 +41,7 @@ class App
     end
   end
 
+  # Prompts the user to enter information to create a new student and adds it to the library.
   def create_student
     puts 'Enter student name:'
     name = gets.chomp
@@ -48,6 +55,7 @@ class App
     puts 'Student created successfully.'
   end
 
+  # Prompts the user to enter information to create a new teacher and adds it to the library..
   def create_teacher
     puts 'Enter teacher name:'
     name = gets.chomp
@@ -61,6 +69,7 @@ class App
     puts 'Teacher created successfully.'
   end
 
+  # Prompts the user to enter information to create a new book and adds it to the library.
   def create_book
     puts 'Enter book title:'
     title = gets.chomp
@@ -72,6 +81,7 @@ class App
     puts 'Book created successfully.'
   end
 
+  # Guides the user to create a new rental by selecting a book and associating it with a person.
   def create_rental
     if @library.books.empty?
       puts 'No books available. Cannot create a rental.'
@@ -107,10 +117,21 @@ class App
     end
   end
 
+  # Lists all rentals associated with a person based on their ID.
   def list_rental_for_person
     puts 'Enter person ID'
     person_id = gets.chomp.to_i
     puts "Rental for person ID #{person_id}:"
     @library.list_rental_for_person(person_id)
+  end
+
+  # Loads data from external files into the library.
+  def load_data_from_files
+    @library.load_data_from_files
+  end
+
+  # Saves library data to external files.
+  def save_data_to_files
+    @library.save_data_to_files
   end
 end
