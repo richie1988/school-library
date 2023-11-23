@@ -17,16 +17,7 @@ class Rental
   end
 
   # Converts the rental to a hash for serialization.
-  def to_h
-    book_info = @book.nil? ? nil : { 'title' => @book.title, 'author' => @book.author }
-    person_info = @person.nil? ? nil : { 'id' => @person.id, 'name' => @person.name, 'age' => @person.age }
-
-    {
-      'date' => @date,
-      'book' => book_info,
-      'person' => person_info
-    }
-  end
+ 
 
   # Creates a new rental instance from a hash with optional book and person associations.
   def self.from_h(data, book = nil, person = nil)
