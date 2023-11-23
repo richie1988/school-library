@@ -1,3 +1,5 @@
+# main.rb
+
 require_relative 'modules/app'
 
 def display_menu
@@ -20,12 +22,13 @@ def user_choices(choice, app)
     4 => :create_book,
     5 => :create_rental,
     6 => :list_rental_for_person,
-    7 => :exit
+    7 => :exit # Corrected symbol
   }
 
   selected_method = menu_options[choice]
 
   if selected_method == :exit
+    app.save_data_to_files # Save data before exiting
     puts 'Exiting the app. Goodbye!'
     exit
   elsif selected_method
@@ -37,6 +40,7 @@ end
 
 def display_main
   app = App.new
+  app.load_data_from_files # Load data at the start
 
   loop do
     display_menu

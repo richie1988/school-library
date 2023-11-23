@@ -1,0 +1,1 @@
+[{"id":515,"name":"Moses","age":25,"parent_permission":false,"classroom":null,"rentals":[]},{"id":146,"name":"Jonathan","age":60,"parent_permission":true,"specialization":"teacher","rentals":[{"date":"2023-11-23","book":{"title":"Going","author":"ruth"},"person":{"id":146,"name":"Jonathan","age":60}}]}]
