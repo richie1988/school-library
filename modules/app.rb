@@ -82,7 +82,7 @@ class App
   end
 
   # Guides the user to create a new rental by selecting a book and associating it with a person.
-  def create_rental
+  def puts_books
     if @library.books.empty?
       puts 'No books available. Cannot create a rental.'
       return
@@ -91,6 +91,10 @@ class App
     @library.books.each_with_index do |book, index|
       puts "#{index}) Title: #{book.title}, Author: #{book.author}"
     end
+  end
+
+  def create_rental
+    puts_books
 
     selected_book_index = gets.chomp.to_i
 
