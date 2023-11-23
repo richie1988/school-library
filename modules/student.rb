@@ -9,13 +9,12 @@ class Student < Person
   def initialize(name, age, parent_permission: true, classroom: nil)
     super(name, age, parent_permission: parent_permission)
     @classroom = classroom
-    classroom&.add_students(self)
   end
 
   # Adds the student to a classroom, updating the classroom and student associations.
   def add_classroom(classroom)
     @classroom = classroom
-    classroom.student.push(self) unless classroom.student.include?(self)
+    classroom.students.push(self) unless classroom.students.include?(self)
   end
 
   # Returns a playful message indicating playing hooky.
