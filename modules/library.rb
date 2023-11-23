@@ -40,9 +40,17 @@ class Library
     @books << book
   end
 
-  # Adds a rental to the library.
+  # Adds a rental to the library, checking for existing entries.
   def add_rental(rental)
-    @rentals << rental
+    existing_rental = @rentals.find do |r|
+      r.date == rental.date && r.book == rental.book && r.person == rental.person
+    end
+
+    if existing_rental
+      puts 'Rental already exists.'
+    else
+      @rentals << rental
+    end
   end
 
   # Converts people to an array of hashes.
