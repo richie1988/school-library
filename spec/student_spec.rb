@@ -1,6 +1,6 @@
 require 'rspec'
 require_relative '../modules/student'
-require_relative '../modules/classroom'
+require_relative '../decorator/classroom'
 
 describe Student do
   context 'when initialized' do
